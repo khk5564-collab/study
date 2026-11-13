@@ -19,3 +19,6 @@ data["ROAS"] = data["매출"] / data["광고비"]
 print(data.sort_values("ROAS", ascending=False))
 
 # 도전 과제: 아래에 '전환수' 열을 직접 추가하고 '전환당 비용'을 계산해 보세요.
+data["전환수"]=[40,20,15,30]
+data["전환당 비용"]=data["광고비"]/data["전환수"]
+print(data.sort_values("전환당 비용",ascending=True))
